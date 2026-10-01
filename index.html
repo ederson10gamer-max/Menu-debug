@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CGS</title>
+</head>
+<body>
+    <header id="debug-panel">
+        <div class="debug-metric">FPS: <span id="debug-fps" class="metric-value">0</span></div>
+        <div class="debug-metric">Fps-Low: <span id="fps-low" class="metric-value">0</span></div>
+        <div class="debug-metric">Slow: <span id="slowdown" class="metric-value">0.0ms</span></div>
+        <div class="debug-metric">Memória: <span id="memory" class="metric-value">N/A</span></div>
+        
+        <div id="chart-debug">
+            <!-- O Canvas nativo agora gerido inteiramente pelo script.js -->
+            <canvas id="perfChart"></canvas>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
